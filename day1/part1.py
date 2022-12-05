@@ -1,5 +1,5 @@
 f = open("day1/input_part1", "r")
-elf=1
+
 elf_list=[]
 sum=0
 for line in f : 
