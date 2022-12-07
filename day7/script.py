@@ -1,7 +1,3 @@
-
-import time
-start_time = time.time()
-
 f=open("day7/input")
 directory={}
 dir_listing=False
@@ -56,6 +52,3 @@ for dir in directory:
     if (calculate_dir_size(dir)>=to_free_up):
         candidate_to_delete.append(calculate_dir_size(dir))
 print(min(candidate_to_delete))
-
-
-print("--- %s seconds ---" % (time.time() - start_time))
